@@ -1,0 +1,79 @@
+
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+        HTML with div
+
+    </title>
+
+    <style>
+        .pageRightPanel{
+            background-color: #634555 ;
+            padding: 10px;
+            }
+
+        .pageContent{
+            background-color: #ddb7cb;
+            float: left;
+            clear: none;
+            min-height:300px;
+            width:800px;
+
+            box-sizing: border-box
+            padding :10px
+            }
+
+        .pageFooter{
+            background-color: #CBB7F5;
+            float: left;
+            clear: none;
+            min-height:50px;
+            width:100%;
+            text-align: center;
+            box-sizing: border-box;
+            padding :10px;
+            }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class = "pageRightPanel">
+        <h1>Book list</h1>
+    </div>
+
+    <div class = "pageContent">
+    <table>
+
+    <div class = "pageContent">
+        <tr>
+            <th>   Title         </th>
+            <th>   Author         </th>
+            <th>   Year         </th>
+        </tr>
+    </div>
+
+
+            {% for book in books %}
+
+            <tr>
+                 <div class = "pageContent">
+                <td>   {{ book.title}}      </td>
+                <td>   {{ book.author}}          </td>
+                <td>   {{ book.year}}          </td>
+                 </div>
+            </tr>
+
+            {% endfor %}
+
+    </table>
+      </div>
+
+</body>
+</html>

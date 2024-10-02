@@ -1,0 +1,26 @@
+.pageRightPanel{
+            background-color: ##4b1104 ;
+            padding: 10px;
+            }
+
+.pageContent{
+            background-color: #CBB7F5;
+            float: left;
+            clear: none;
+            min-height:600px;
+            width:800px;
+
+            box-sizing: border-box
+            padding :10px
+            }
+
+.pageFooter{
+            background-color: #CBB7F5;
+            float: left;
+            clear: none;
+            min-height:50px;
+            width:100%;
+            text-align: center;
+            box-sizing: border-box;
+            padding :10px;
+            }
